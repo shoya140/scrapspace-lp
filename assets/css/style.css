@@ -1,0 +1,204 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+html, body, #content {
+    margin: 0px;
+    height: 100%;
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: #ffffff;
+    background-color: #28425a;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.splash {
+    height: 100%;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.macbookpro {
+    background-image: url('/assets/img/macbookpro.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.macbookpro img {
+    position: absolute;
+    top: 29%;
+    left: 12%;
+    width: 76%;
+}
+
+.preview {
+    height: 30%;
+    display: table;
+    table-layout: fixed;
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+.imac {
+    background-image: url('/assets/img/imac.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.imac img {
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    width: 86%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+}
+
+h1{
+    font-size: 340%;
+    line-height: 30%;
+}
+
+a {
+    color: #dddddd;
+}
+a:hover {
+    color: #ffffff;
+}
+
+.description {
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    white-space: pre-wrap;
+    text-align: left;
+}
+
+.large {
+    font-size: 20px;
+}
+
+.attribution {
+    margin-top: 80px;
+    padding-bottom: 6em;
+}
+
+.download-button {
+    font-size: 16px;
+    margin: 5px 1px;
+    padding: 12px 18px;
+    text-align: center;
+    background-color: transparent;
+    color: #39ac86;
+    border: 2px solid #39ac86;
+    border-radius: 3px;
+    transition: .2s;
+}
+
+.download-button:hover {
+    background: #39ac86;
+    color: #fff;
+    cursor: pointer;
+}
+
+.icon-row {
+    margin: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    position: relative;
+}
+
+.icon-row .icon-container {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+.icon-row img {
+    width: 100%;
+}
+
+.chevron {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin-top: -2em;
+    color: #10142a;
+    opacity: 0.5;
+    margin-left: -0.5em;
+}
+
+@media screen and (min-width: 900px) {
+    .splash > div {
+        display: table-cell;
+        vertical-align: middle;
+        padding: 1em;
+        height: 100%;
+    }
+
+    .splash .left {
+        text-align: right;
+        width: 40%;
+    }
+
+    .splash .right {
+        text-align: left;
+    }
+
+    .splash .macbookpro {
+        width: 500px;
+        height: 590px;
+    }
+
+    .preview .imac {
+        width: 500px;
+        height: 400px;
+    }
+    
+    .icon-row {
+        margin-bottom: 80px;
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .splash .macbookpro {
+        width: 330px;
+        height: 300px;
+        display: inline-block;
+    }
+
+    .macbookpro img {
+        top: 23%;
+    }
+
+    .splash .left {
+        padding-top: 130px;
+    }
+
+    .preview .imac {
+        width: 300px;
+        height: 300px;
+    }
+
+    .imac img {
+        position: absolute;
+        top: 15%;
+        left: 8%;
+        width: 84%;
+    }
+}
